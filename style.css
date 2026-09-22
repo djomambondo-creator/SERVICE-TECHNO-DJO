@@ -104,18 +104,17 @@ nav a:hover {
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
 }
 
 .card {
     background: white;
-    width: 270px;
-    min-height: 220px;
+    width: 100%;
+    min-height: 230px;
     padding: 30px 25px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -229,6 +228,10 @@ footer p {
         width: 100%;
         max-width: 360px;
     }
+    
+    .cards {
+    grid-template-columns: 1fr;
+}
 
 s    .contact {
         padding: 60px 15px;
